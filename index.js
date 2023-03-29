@@ -9,7 +9,8 @@ app.get('/', (req, res)=>{
 app.listen(3000, (err, done)=>{
 	if(!err){
 		console.log({
-			Message: 'success'
+			Message: 'success',
+			Localhost: 'http://localhost:3000'
 		})
 	}
 })
