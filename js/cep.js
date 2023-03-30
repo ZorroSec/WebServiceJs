@@ -4,7 +4,9 @@ const cepSearch = ()=>{
     btn.onclick = ()=>{
         fetch(`https://brasilapi.com.br/api/cep/v1/${cep.value}`).then(res=>{
             res.json().then(data=>{
-                console.log(data)
+                for(let [key, value] of Object.entries(data)){
+                    console.log(key, value)
+                }
             })
         })
     }
