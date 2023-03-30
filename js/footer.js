@@ -1,14 +1,14 @@
-const footer = document.getElementById('footer')
 const footerReturn = ()=>{
 	const today = new Date()
 	const hour = today.getHours()
 	const minu = today.getMinutes()
 	const seco = today.getSeconds()
-	const m = checkTIme(minu)
-	const s = checkTIme(seco)
-	footer.innerHTML+=`&copy;Zezao ${hour}:${m}:${s}`
+	const m = checkTme(minu)
+	const s = checkTme(seco)
+	document.getElementById('footer').innerHTML=`&copy;Zezao ${hour}:${m}:${s}`
+	t = setTimeout('footerReturn()', 500)
 }
-const checkTIme = (i)=>{
+const checkTme = (i)=>{
 	if(i<=10){
 		i = "0" + i
 	}
