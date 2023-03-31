@@ -22,4 +22,7 @@ header.header{
 .conteiner main article{
 	background: #ffffff;
 	margin-bottom: 10px;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 0 0 2.2em rgba(0,0,0,.3);
 }
