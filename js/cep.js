@@ -8,12 +8,7 @@ const cepSearch = ()=>{
                 for(let [key, value] of Object.entries(data)){
                     ret.innerHTML+=`
                     <div class'search'>
-                        <div class='keys'>
-                            <h5>${key}</h5>
-                        </div>
-                        <div class='values'>
-                            <h6>${value}</h6>
-                        </div>
+                        <p>${key} => ${value}</p>
                     </div>
                     `
                 }
