@@ -7,14 +7,14 @@ const cepSearch = ()=>{
             res.json().then(data=>{
                 for(let [key, value] of Object.entries(data)){
                     ret.innerHTML+=`
-                    <table border='1'>
-                        <tr>
-                            <td>${key}</td>
-                        </tr>
-                        <tr>
-                            <th>${value}</th>
-                        </tr>
-                    </table>
+                    <div class'search'>
+                        <div class='keys'>
+                            <h5>${key}</h5>
+                        </div>
+                        <div class='values'>
+                            <h6>${value}</h6>
+                        </div>
+                    </div>
                     `
                 }
             })
