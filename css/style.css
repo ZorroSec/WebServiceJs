@@ -14,3 +14,12 @@ header.header{
 	background: #ffffff;
 	font-family: 'Alkatra', cursive;
 }
+.conteiner{
+	margin: auto;
+	width: 65%;
+	padding: 10px;
+}
+.conteiner main article{
+	background: #ffffff;
+	margin-bottom: 10px;
+}
